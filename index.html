@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sexta aplicacion movil</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app6.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+</head>
+
+ <body onLoad="MM_preloadImages('imagenes/historia1.jpg','imagenes/gamaalta2.jpg','imagenes/compañias3.jpg','imagenes/monumento2.jpg','imagenes/maximiliano.jpg','imagenes/4mayo2.jpg')">
+
+   <div data-role="page" id="Principal" data-theme="c">
+    <div data-role="header" data-add-back-btn="false" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+     <h1>Batalla de puebla </h1>
+    </div>
+    <div data-role="main" class="ui-content">
+   </div>
+   <div>
+   <div data-role="main" class="ui-content" align="center">
+ <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+    <a href="http://www.3museos.com/?pieza=batalla-de-puebla" data-role="button" id="#">
+     <h2>Otros museos</h2>
+    </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="http://www.obrasweb.mx/arquitectura/2012/05/04/norten-reinterpreta-los-150-anos-de-la-batalla-de-puebla" data-role="button" id="#">
+     <h2>Otros monumentos</h2>
+    </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="https://es.wikipedia.org/wiki/Batalla_de_Puebla" data-role="button" id="#">
+     <h2>Antecedentes</h2>
+    </a>
+   </li>  
+    <li class="ui-first-child ui-last-child">
+    <a href="http://luiguio1804.wixsite.com/batalladepuebla/personajes" data-role="button" id="#">
+     <h2>Otros personajes</h2>
+    </a>
+   </li>    
+  </ul>
+   </div>
+ </div>
+    <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>4 de Mayo </h2>
+        <p>Batalla de atlixco</p>
+       </a>
+    </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>5 de Mayo </h2>
+        <p>Batalla de Puebla</p>
+       </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Inicio de la Batalla de Puebla</h2>
+        <p>Por que causa comenzo la batalla</p>
+       </a>
+    </li>     
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Monumentos a la Batalla de Puebla</h2>
+        <p>Plaza conmemorativa a la Batalla del 5 de Mayo</p>
+       </a>
+    </li>         
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Museos que existen de la Btalla de Puebla</h2>
+        <p>Museo interactivo de la Batalla del 5 de Mayo </p>
+       </a> 
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Heroes de la Batalla</h2>
+        <p>Personajes que participaron en la Batalla </p>
+       </a> 
+     </li>
+     </ul>
+   </div>
+   <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<center><div class="ws_images"><ul>
+		<li><img src="data1/images/5_de_mayo.png" alt="5 de mayo" title="5 de mayo" id="wows1_0"/></li>
+		<li><img src="data1/images/batalla_de_atlixco.jpg" alt="batalla de atlixco" title="batalla de atlixco" id="wows1_1"/></li>
+		<li><img src="data1/images/4mayo.jpg" alt="4mayo" title="4mayo" id="wows1_2"/></li>
+		<li><img src="data1/images/4mayo2.jpg" alt="4mayo2" title="4mayo2" id="wows1_3"/></li>
+		<li><img src="data1/images/benito.jpg" alt="benito" title="benito" id="wows1_4"/></li>
+		<li><img src="data1/images/batalla_de_puebla.png" alt="batalla de puebla" title="batalla de puebla" id="wows1_5"/></li>
+		<li><img src="data1/images/ignacio.jpg" alt="ignacio" title="ignacio" id="wows1_6"/></li>
+		<li><img src="data1/images/inicio_batalla.jpg" alt="inicio batalla" title="inicio batalla" id="wows1_7"/></li>
+		<li><img src="data1/images/maximiliano.jpg" alt="maximiliano" title="maximiliano" id="wows1_8"/></li>
+		<li><img src="data1/images/monumento.jpg" alt="monumento" title="monumento" id="wows1_9"/></li>
+		<li><img src="data1/images/monumento1.jpg" alt="monumento1" title="monumento1" id="wows1_10"/></li>
+		<li><img src="data1/images/monumento2.jpg" alt="monumento2" title="monumento2" id="wows1_11"/></li>
+		<li><img src="data1/images/museo.jpg" alt="museo" title="museo" id="wows1_12"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/napoleon.jpg" alt="http://wowslider.com/" title="napoleon" id="wows1_13"/></a></li>
+		<li><img src="data1/images/porfirio.jpg" alt="porfirio" title="porfirio" id="wows1_14"/></li>
+	</ul></div></center>
+	<div class="ws_bullets"><div>
+		<a href="#" title="5 de mayo"><span><img src="data1/tooltips/5_de_mayo.png" alt="5 de mayo"/>1</span></a>
+		<a href="#" title="batalla de atlixco"><span><img src="data1/tooltips/batalla_de_atlixco.jpg" alt="batalla de atlixco"/>2</span></a>
+		<a href="#" title="4mayo"><span><img src="data1/tooltips/4mayo.jpg" alt="4mayo"/>3</span></a>
+		<a href="#" title="4mayo2"><span><img src="data1/tooltips/4mayo2.jpg" alt="4mayo2"/>4</span></a>
+		<a href="#" title="benito"><span><img src="data1/tooltips/benito.jpg" alt="benito"/>5</span></a>
+		<a href="#" title="batalla de puebla"><span><img src="data1/tooltips/batalla_de_puebla.png" alt="batalla de puebla"/>6</span></a>
+		<a href="#" title="ignacio"><span><img src="data1/tooltips/ignacio.jpg" alt="ignacio"/>7</span></a>
+		<a href="#" title="inicio batalla"><span><img src="data1/tooltips/inicio_batalla.jpg" alt="inicio batalla"/>8</span></a>
+		<a href="#" title="maximiliano"><span><img src="data1/tooltips/maximiliano.jpg" alt="maximiliano"/>9</span></a>
+		<a href="#" title="monumento"><span><img src="data1/tooltips/monumento.jpg" alt="monumento"/>10</span></a>
+		<a href="#" title="monumento1"><span><img src="data1/tooltips/monumento1.jpg" alt="monumento1"/>11</span></a>
+		<a href="#" title="monumento2"><span><img src="data1/tooltips/monumento2.jpg" alt="monumento2"/>12</span></a>
+		<a href="#" title="museo"><span><img src="data1/tooltips/museo.jpg" alt="museo"/>13</span></a>
+		<a href="#" title="napoleon"><span><img src="data1/tooltips/napoleon.jpg" alt="napoleon"/>14</span></a>
+		<a href="#" title="porfirio"><span><img src="data1/tooltips/porfirio.jpg" alt="porfirio"/>15</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">bootstrap slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+   <div data-role="footer" align="center" data-theme="c" data-position="fixed">
+     <div>
+       <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <div>
+      <h4>Aplicacion Seis</h4>
+      <h4> Maria del Angel Acosta Flores</h4>
+   </div>
+  </div>
+ </div>
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="c">
+           <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+             <h1>Batalla 4 de mayo</h1>
+          </div>
+          <div data-role="content" align="center">
+            <div> 
+            <div data-role="collapsible" data-content-theme="false">
+            <h1> Batalla de Atlixco</h1>
+            <div>
+            <img src="imagenes/batalla de atlixco.jpg" width="50%" height="50%">
+            </div>
+            </div>
+             <h2>La Batalla de Atlixco tuvo lugar el 4 de mayo de 1862 en las inmediaciones de la Hacienda de las Traperas en Atlixco en el estado de Puebla, México, entre elementos del ejército mexicano de la república, al mando de los generales Antonio Carvajal y Tomás O'Horan contra las tropas al servicio del Segundo Imperio Mexicano comandadas por el general José María Cobos y de Leonardo Márquez, compuesta de soldados conservadores mexicanos en apoyo de envío de refuerzos para llevar a cabo la Batalla de Puebla, durante la Segunda Intervención Francesa en México.<br> 
+            Esta batalla culminó con una victoria republicana y debido a esto el grupo conservador de Márquez no pudo lograr su objetivo de auxiliar a las tropas francesas del Conde de Lorencez en la batalla de Puebla. </h2></div>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('atlixco','','imagenes/4mayo2.jpg',1)"><img src="imagenes/4mayo.jpg" width="271" height="186" id="atlixco"></a> </div>
+<div data-role="footer" data-theme="c" data-position="fixed">
+    <h4>Aplicacion Seis, MAAF</h4>
+        </div>
+        </div>
+     </div>
+
+      
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Batalla 5 de mayo</h1>   
+   </div>   
+   <div data-role="content" align="center">
+     <div>
+      <div data-role="collapsible" data-content-theme="false">
+            <h1> Batalla de Puebla</h1>
+            <div>
+            <img src="imagenes/batalla de puebla.png" width="50%" height="50%">
+            </div>
+            </div>
+       <h2>La batalla de Puebla fue un combate librado el 5 de mayo de 1862 en las cercanías de la ciudad de Puebla, entre los ejércitos de la República Mexicana, bajo el mando de Ignacio Zaragoza, y del Segundo Imperio Francés, dirigido por Charles Ferdinand Latrille, conde de Lorencez, durante la Segunda Intervención Francesa en México, cuyo resultado fue una victoria importante para los mexicanos ya que con unas fuerzas consideradas como inferiores lograron vencer a uno de los ejércitos más experimentados y respetados de su época. Pese a su éxito, la batalla no impidió la invasión del país, aunque sí que sería la primera batalla de una guerra que finalmente México ganaría. Los franceses regresarían al siguiente año, con lo que se libró una segunda batalla en Puebla en la que se enfrentaron 35 000 franceses contra 29 000 mexicanos (defensa que duró 62 días) y lograrían avanzar hasta la Ciudad de México, lo que permitió establecer el Segundo Imperio Mexicano. Finalmente, ante la incapacidad de consolidar un imperio y después de perder 11 000 hombres debido a la actividad guerrillera que nunca dejó de subsistir,1 los franceses se retiraron incondicionalmente del país en el año 1867.  
+ </h2>  
+ </div>
+     </div>
+ <div data-role="footer" data-theme="c" data-position="fixed">
+   <h4>Aplicacion Seis, MAAF</h4>
+</div>
+ </div>
+</div>
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+             <h1>Inicio del conflicto</h1>
+          </div>
+          <div data-role="content" align="center">
+            <div>
+            <div data-role="collapsible" data-content-theme="false">
+            <h1> Comienzo de la Batalla</h1>
+            <div>
+            <img src="imagenes/inicio batalla.jpg" width="50%" height="50%">
+            </div>
+            </div> 
+             <h2>Debido principalmente a la cantidad de deudas, , Inglaterra y España subscribieron el Convenio de Londres, por el cual se comprometieron a intervenir por el uso de la fuerza en México para reclamar sus derechos como acreedores, mientras tanto el Presidente Benito Juárez declaró suspendidos los compromisos adquiridos y aplazó pagar la deuda a las naciones europeas. Tras desembarcar en Veracruz, España e Inglaterra aceptaron las explicaciones mexicanas dadas en los Tratados de La Soledad, los cuales tenían como fundamento, el respeto a la soberanía territorial, el reconocimiento de las naciones acreedoras al Estado Mexicano, la entrada al terreno de las negociaciones para llegar a acuerdos en común, que beneficiaría tanto a la República Mexicana, como a los intereses de las potencias invasoras, y por último, se permitiría que los soldados de los tres países se establecieran en las ciudades mexicanas de Orizaba, Córdoba y Tehuacán durante las negociaciones, debido a lo malsano del clima imperante en el puerto de Veracruz; en caso contrario, los soldados de las tres potencias se retirarían a las costas de Veracruz para así comenzar las hostilidades.<br>
+Solo los representantes de España e Inglaterra comprendieron la situación que guardaba la República Mexicana, al analizar los argumentos, decidieron negociar de manera independiente ante la autoridad mexicana, privilegiando a la nación mexicana con un triunfo diplomático, que dadas las difíciles circunstancias, permitió encauzar esfuerzos posteriormente hacia la intervención del Imperio Francés; pero ellos tenían otros planes. </h2></div>
+          
+          </div>
+ <div data-role="footer" data-theme="c" data-position="fixed">
+          <h4>Aplicacion Seis, MAAF</h4>
+        </div>
+        </div>
+     </div>
+       
+     <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="c">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Monumentos de la batalla de Puebla</h1>
+      </div>
+      <div data-role="content" align="center">
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('monumentos','','imagenes/monumento2.jpg',1)"><img src="imagenes/monumento1.jpg" width="275" height="183" id="monumentos"></a>
+          <h2><u> "Monumento Emblemático al 150 Aniversario de la Batalla de Puebla"</u><br>
+          En Puebla,  ciudad de leyendas e inmensa riqueza cultural, encontramos un caleidoscopio de edificaciones, texturas e interacciones que se entremezclan para regalarnos un mosaico de la actual cultura poblana. Dentro de éste marco, al noreste del zócalo se encuentra un complejo que agrupa diversos espacios para la cultura, educación y recreación; sitio que alberga al “Monumento Emblemático” del 150 Aniversario de la Batalla de Puebla.
+       <img src="imagenes/monumento.jpg" width="50%" height="50%"></h2> 
+       </div>
+       
+   </div>
+   <div data-role="footer" data-theme="c" data-position="fixed">
+        <h4>Aplicacion Seis, MAAF</h4>
+   </div>
+   </div>
+   </div>
+          
+   <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="c">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Museos sobre la batalla de Puebla</h1>
+    </div>
+    <div data-role="content" align="center">
+      
+      <h2><u>"MUSEO INTERACTIVO DE LA BATALLA DEL 5 DE MAYO"</u><br>
+      Una de las más grandes batallas que ha librado el país tuvo lugar en la ciudad de Puebla, la batalla del 5 de mayo de 1862. En la zona de los fuertes, en el mismo escenario del pasado, se ubica el museo interactivo.
+El recorrido por el museo utiliza la tecnología más puntera para narrar las acciones militares y la biografía de héroes nacionales como Negrete, Díaz y Zaragoza. Pantallas táctiles, proyecciones en 3-D y contenidos interactivos descargables en dispositivos ofrecen una experiencia única al visitante.<br>
+<img src="imagenes/museo.jpg" width="50%" height="50%">
+
+
+</h2>
+</div>
+      </div>
+ <div data-role="footer" data-theme="c" data-position="fixed">
+     <h4>Aplicacion Seis, MAAF</h4>
+  </div>
+</div>
+</div> 
+ <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="c">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Heroes de la Batalla</h1>
+    </div>
+    <div data-role="content" align="center">
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('heroes','','imagenes/maximiliano.jpg',1)"><img src="imagenes/porfirio.jpg" width="274" height="184" id="heroes"></a>
+<h2><u>"Las fuerzas mexicanas ganan la Batalla de Puebla contra los invasores franceses"</u><br>
+      Estas fueron las palabras que el General Ignacio Zaragoza se dirigió a sus tropas la madrugada del 5 de mayo de 1862; iban a pelear contra lo que se consideraba en ese momento el mejor ejército del mundo, pero para los mexicanos eran simplemente invasores. <br>
+      <center><img src="imagenes/ignacio.jpg" width="50%" height="50%"></center>
+
+Cuatro meses antes de ésta batalla, en enero de 1962 las tropas francesas, españolas y británicas invadieron México  en protesta por la suspensión de los pagos de la deuda extranjera decretada por el Presidente Benito Juárez.<br>
+<center><img src="imagenes/benito.jpg"></center>
+
+Sin embargo el 17 de abril los franceses iniciaron su avance en nuestro país. Aunque la deuda era un elemento importante, lo esencial en esta invasión era el interés de Napoleón III en establecer un imperio en América que contuviera la expansión anglosajona e incluso invadir lo que después sería Estados Unidos y en ese momento estaban debilitados por la Guerra de Secesión.<br>
+<center><img src="imagenes/napoleon.jpg"></center>
+
+
+</h2>
+</div>
+      </div>
+ <div data-role="footer" data-theme="c" data-position="fixed">
+     <h4>Aplicacion Seis, MAAF</h4>
+  </div>
+</div>
+</div>                                 
+                               
+</body>
+</html>
